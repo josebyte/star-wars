@@ -28,17 +28,21 @@ export class AuthService {
 
   register({firstName, lastName, username, password}): boolean {
     const registeredUsers = JSON.parse(localStorage.getItem('users'));
-    registeredUsers.filter(user =>  user.username === username);
-    if (registeredUsers.length > 0) {
-      // username already exists
-      return true;
-    } else {
-      const users = registeredUsers ? registeredUsers : [];
-      users.push({firstName, lastName, username, password});
-      localStorage.setItem('users', JSON.stringify(users));
-      this.router.navigate(['/auth']);
-      return false;
+
+    if (registeredUsers && registeredUsers.length > 0) {
+      const foundUser = registeredUsers.filter(user =>  user.username === username);
+      if (foundUser && foundUser.length > 0) {
+        // username already exists
+        return true;
+      }
     }
+
+    const users = registeredUsers ? registeredUsers : [];
+    users.push({firstName, lastName, username, password});
+    localStorage.setItem('users', JSON.stringify(users));
+    this.router.navigate(['/auth']);
+
+    return false;
   }
 
   logout(): void {
