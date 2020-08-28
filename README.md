@@ -1,5 +1,8 @@
 # StarWars
 
+Project demo is visible here:
+https://josebyte.github.io/star-wars/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
 ## Development server
