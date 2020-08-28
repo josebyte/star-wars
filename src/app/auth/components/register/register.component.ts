@@ -8,8 +8,8 @@ import {AuthService} from '../../services/auth.service';
   styleUrls: ['./register.component.sass']
 })
 export class RegisterComponent implements OnInit {
-
   loading = true;
+  error: boolean;
 
   form: FormGroup = new FormGroup({
     firstName: new FormControl('', Validators.required),
@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
   }
 
   register(): void {
-    this.authService.register(this.form.value);
+    this.error = this.authService.register(this.form.value);
   }
 
 }

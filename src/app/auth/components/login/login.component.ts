@@ -8,7 +8,7 @@ import { AuthService} from '../../services/auth.service';
   styleUrls: ['./login.component.sass']
 })
 export class LoginComponent implements OnInit{
-
+  error: boolean;
   loading = true;
 
   form: FormGroup = new FormGroup({
@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit{
   }
 
   login(): void {
-    this.authService.login(this.form.value);
+    this.error = this.authService.login(this.form.value);
   }
 
 

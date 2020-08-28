@@ -13,21 +13,32 @@ export class AuthService {
     //private _http: HttpClient,
   ) { }
 
-  login({ username, password }): void{
+  login({ username, password }): boolean{
     const users: any[] = JSON.parse(localStorage.getItem('users')); //todo: user model
-    console.log(users);
-    users.filter(user =>  user.username === username && user.password === password);
-    if (users.length > 0) {
+    const loggedUser = users.filter(user => user.username === username && user.password === password);
+
+    if (loggedUser && loggedUser.length > 0) {
       localStorage.setItem('currentUser', JSON.stringify(username));
       this.router.navigate(['/ships']);
+      return false;
+    } else {
+      return true;
     }
   }
 
-  register({firstName, lastName, username, password}): void {
+  register({firstName, lastName, username, password}): boolean {
     const registeredUsers = JSON.parse(localStorage.getItem('users'));
-    const users = registeredUsers ? registeredUsers : [];
-    users.push({firstName, lastName, username, password});
-    localStorage.setItem('users', JSON.stringify(users));
+    registeredUsers.filter(user =>  user.username === username);
+    if (registeredUsers.length > 0) {
+      // username already exists
+      return true;
+    } else {
+      const users = registeredUsers ? registeredUsers : [];
+      users.push({firstName, lastName, username, password});
+      localStorage.setItem('users', JSON.stringify(users));
+      this.router.navigate(['/auth']);
+      return false;
+    }
   }
 
   logout(): void {
