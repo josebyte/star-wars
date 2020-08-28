@@ -17,11 +17,9 @@ export class ShipsService {
     );
   }
 
-  loadShipInfo(id: number): Observable<any> { // todo: create ship model
+  loadShipDetails(id: number): Observable<any> { // todo: create ship model
     return this.http.get(
-      environment.api.ships + '/' + id
-    ).pipe(
-      this._manageLoad()
+      environment.api.ships + id
     );
   }
 

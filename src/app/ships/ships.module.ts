@@ -6,11 +6,13 @@ import { ShipListComponent } from './components/ship-list/ship-list.component';
 import { ShipComponent } from './components/ship/ship.component';
 import { ShipDetailsComponent } from './components/ship-details/ship-details.component';
 import { ShipsService} from './services/ships.service';
+import { AuthGuard} from '../auth/auth.guard';
 
 @NgModule({
   declarations: [ShipListComponent, ShipComponent, ShipDetailsComponent],
   providers: [
-    ShipsService
+    ShipsService,
+    AuthGuard
   ],
   imports: [
     CommonModule,

@@ -1,20 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
 
+//Reset some chrome and safary default styles:
+input[type="search"]
+  -webkit-appearance: none !important
+
+::-webkit-search-cancel-button
+  -webkit-appearance: none !important
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus
+  border: none
+  -webkit-text-fill-color: black
+  -webkit-box-shadow: 0 0 0 1000px #000 inset
+  transition: background-color 5000s ease-in-out 0s
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+  -webkit-box-shadow: 0 0 0 0 white inset !important
+
+// Reset some bootstrap default styles:
+.form-control
+  box-shadow: none
+
+input
+  outline-style: none !important
+  box-shadow: none !important
+  border-color: transparent !important
+  border: none !important
+  border-bottom: solid 1px #bdbdbd !important
+  border-radius: 0 !important
+
+input:focus
+  border-bottom: solid 1px black !important
+
+// Styles:
+
 a
   cursor: pointer
+  color: black
+
+a:hover
+  text-decoration: none
+
+.center
+  margin: auto
+  text-align: center
+
+.right
+  text-align: right
+
+.panel-body
+  padding: 0
+
+.btn, .btn-primary, .btn:hover, .btn-primary:hover
+  color: #fff
+  background-color: #b99d6b !important
+  border-color: #b99d6b !important
+  border-radius: 0
+  text-decoration: none
 
 .ship .panel-body img
   max-width: 100%
   object-fit: cover
 
-.container
-  width: 100%
-
 @media (min-width: 992px) and (max-width: 1200px)
 .panel-heading
   min-height: 72px
   height: 58px
-
-@media (min-width: 992px)
-.container
-  width: 750px

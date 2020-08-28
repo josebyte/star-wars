@@ -1,8 +1,40 @@
-<div class="panel panel-default ship" [routerLink]="['/ships/ship-details']">
-  <div class="panel-heading">
-    <h3 class="panel-title">{{ starship.name }}</h3>
+
+<img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+<div class="topBar">
+  <a (click)="back()">VOLVER</a>
+</div>
+
+<div *ngIf="starship$ | async as starship">
+  <div class="col-xs-12 col-sm-6 detail-image">
+    <img [src]="'https://starwars-visualguide.com/assets/img/starships/'+id+'.jpg'"
+    (error)="$event.target.src=''">
   </div>
-  <div class="panel-body">
-    <img [src]="'https://starwars-visualguide.com/assets/img/starships/'+starship.shipId+'.jpg'">
+
+  <div class="col-xs-12 col-sm-6 details">
+    <h3>{{ starship.name }}</h3>
+
+    <div class="center"><b>{{ starship.cost_in_credits | currency:'EUR':'symbol':'1.2-2':'es-ES' }}</b></div>
+
+    <div class="row">
+      <div class="col-xs-6">Megalight speed: </div>
+      <div class="col-xs-6">{{ starship.MGLT | number}}</div>
+
+      <div class="col-xs-6">Max. capacity (kg): </div>
+      <div class="col-xs-6">{{ starship.cargo_capacity | number:'1.2-2':'es-ES' }}</div>
+
+      <div class="col-xs-6">Consumables: </div>
+      <div class="col-xs-6">{{ starship.consumables }}</div>
+
+      <div class="col-xs-6">Crew: </div>
+      <div class="col-xs-6">{{ starship.crew }}</div>
+
+      <div class="col-xs-6">Passengers: </div>
+      <div class="col-xs-6">{{ starship.passengers }}</div>
+
+      <div class="col-xs-6">Hyperdrive rating: </div>
+      <div class="col-xs-6">{{ starship.hyperdrive_rating | number }}</div>
+    </div>
+
   </div>
 </div>

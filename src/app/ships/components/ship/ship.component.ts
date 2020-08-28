@@ -13,9 +13,13 @@ export class ShipComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getShipId() {
+  getShipId(): number {
     const url = this.starship.url;
     return url.split('/').filter( item => item !== '').slice(-1)[0];
+  }
+
+  onImgError(error): void{
+    error.target.src = '../../../../assets/img/no-image.jpg';
   }
 
 }

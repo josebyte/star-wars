@@ -9,6 +9,8 @@ export const environment = {
     login: `${baseUrl}/login`, // endpoint doesn't exists
     register: `${baseUrl}/register`, // endpoint doesn't exists
     ships: `${baseUrl}/starships/`,
+    films: `${baseUrl}/films/`,
+    pilot: `${baseUrl}/people/`,
   }
 };
 
