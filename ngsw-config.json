@@ -26,5 +26,19 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "urls": [
+        "https://swapi.dev/api/**"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "timeout": "5s",
+        "maxAge": "2d",
+        "maxSize": 20
+      }
+    }
   ]
 }
