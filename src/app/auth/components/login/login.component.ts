@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { Component, OnInit} from '@angular/core';
+import { FormControl, FormGroup, Validators} from '@angular/forms';
+import { AuthService} from '../../services/auth.service';
 
 @Component({
   selector: 'app-auth',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.sass']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
 
   loading = true;
 
@@ -15,10 +16,16 @@ export class LoginComponent {
     password: new FormControl('', Validators.required)
   });
 
-  constructor() { }
+  constructor(
+    private authService: AuthService
+  ) { }
 
-  login() {
+  ngOnInit(): void {
+    this.loading = false;
+  }
 
+  login(): void {
+    this.authService.login(this.form.value);
   }
 
 

@@ -1,0 +1,9 @@
+<ng-container *ngIf="(starships$ | async) as starships">
+  <div class="ships">
+    <div class="row">
+      <app-ship *ngFor="let ship of starships.results" [starship]="ship" class="col-xs-6 col-sm-6 col-md-3"></app-ship>
+    </div>
+  </div>
+  <button *ngIf="starships.previous" (click)="goToPage(starships.previous)" class="btn btn-primary">Prev</button>
+  <button *ngIf="starships.next" (click)="goToPage(starships.next)" class="btn btn-primary">Next</button>
+</ng-container>
