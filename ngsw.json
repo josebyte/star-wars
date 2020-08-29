@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1598689588051,
+  "timestamp": 1598697305432,
   "index": "/star-wars/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/star-wars/1.8f9afd1946b4d697974e.js",
+        "/star-wars/1.ee00e7c9c83c8b2a4f4a.js",
         "/star-wars/5.347a44993a1b73e8a4f5.js",
         "/star-wars/favicon.ico",
         "/star-wars/index.html",
         "/star-wars/main.d83c08b526d7eb22cb84.js",
         "/star-wars/manifest.webmanifest",
         "/star-wars/polyfills.df8df8924122ea727a19.js",
-        "/star-wars/runtime.0cf9ca282f2a1c56bb99.js",
+        "/star-wars/runtime.ed86fc642434f8f794a0.js",
         "/star-wars/styles.df45c084bf313fe78fbd.css"
       ],
       "patterns": []
@@ -61,7 +61,7 @@
     }
   ],
   "hashTable": {
-    "/star-wars/1.8f9afd1946b4d697974e.js": "d78a9b32a8c463428e4f717213c9a6df63a886ee",
+    "/star-wars/1.ee00e7c9c83c8b2a4f4a.js": "7a741f7a2244dfa1b3320103e153e938b4fa1703",
     "/star-wars/5.347a44993a1b73e8a4f5.js": "372de100d3ef72252a19aade31e530386b9e2f42",
     "/star-wars/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/star-wars/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -73,11 +73,11 @@
     "/star-wars/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/star-wars/assets/img/no-image.jpg": "4f9b376208c8e5250e07cd67113979070fe26969",
     "/star-wars/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/star-wars/index.html": "da2f56adb0edb8934127037e3cc7cf6fea999712",
+    "/star-wars/index.html": "3f7a3553599692be4d5bbac3a6cad72849df5f81",
     "/star-wars/main.d83c08b526d7eb22cb84.js": "859b08551fef017b8f6f2296c03cdaeea30dc8ac",
     "/star-wars/manifest.webmanifest": "94856f326156c9cccce0548443a2290ef4c53f95",
     "/star-wars/polyfills.df8df8924122ea727a19.js": "99facf9bee8da793cc8401108fb1e1fa7c6c4782",
-    "/star-wars/runtime.0cf9ca282f2a1c56bb99.js": "ec8208f66b246f3d10d4a411f4de60fe621fc245",
+    "/star-wars/runtime.ed86fc642434f8f794a0.js": "044c7533b28e387d959e7a696dcdd6435cf9a8ea",
     "/star-wars/styles.df45c084bf313fe78fbd.css": "c9f860b39ff8ed8f0466514da5dd4eb22de19fe2"
   },
   "navigationUrls": [
