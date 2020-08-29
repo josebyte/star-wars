@@ -63,12 +63,29 @@ a:hover
 .panel-body
   padding: 0
 
-.btn, .btn-primary, .btn:hover, .btn-primary:hover
-  color: #fff
-  background-color: #b99d6b !important
-  border-color: #b99d6b !important
+.btn, .btn:focus
+  color: white
   border-radius: 0
   text-decoration: none
+  outline: 0 !important
+
+.btn:hover
+  box-shadow: inset 0 0 0 99999px rgba(255,255,255,0.2)
+  color: white
+
+.btn-primary
+  background-color: #b99d6b !important
+  border-color: #b99d6b !important
+
+.btn-grey
+  background-color: #959595
+
+.btn-dark
+  background-color: black
+
+
+
+
 
 .ship .panel-body img
   max-width: 100%
