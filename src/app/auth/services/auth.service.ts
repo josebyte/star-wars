@@ -14,8 +14,8 @@ export class AuthService {
   ) { }
 
   login({ username, password }): boolean{
-    const users: any[] = JSON.parse(localStorage.getItem('users')); //todo: user model
-    const loggedUser = users.filter(user => user.username === username && user.password === password);
+    const users: any[] = JSON.parse(localStorage.getItem('users')); // todo: user model
+    const loggedUser = users?.filter(user => user.username === username && user.password === password);
 
     if (loggedUser && loggedUser.length > 0) {
       localStorage.setItem('currentUser', JSON.stringify(username));
