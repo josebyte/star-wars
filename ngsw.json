@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1600943413278,
+  "timestamp": 1600952040021,
   "index": "/star-wars/index.html",
   "assetGroups": [
     {
@@ -51,12 +51,10 @@
     {
       "name": "api-freshness",
       "patterns": [
-        "https:\\/\\/swapi\\.dev\\/api\\/starships\\/\\?page=1",
-        "https:\\/\\/swapi\\.dev\\/api\\/starships\\/\\?page=2",
-        "https:\\/\\/swapi\\.dev\\/api\\/starships\\/\\?page=3"
+        "https:\\/\\/swapi\\.dev\\/api\\/.*"
       ],
       "strategy": "performance",
-      "maxSize": 20,
+      "maxSize": 50,
       "maxAge": 300000,
       "cacheQueryOptions": {
         "ignoreVary": true
