@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1600940092003,
+  "timestamp": 1600940789939,
   "index": "/star-wars/index.html",
   "assetGroups": [
     {
@@ -21,7 +21,7 @@
         "/star-wars/manifest.webmanifest",
         "/star-wars/polyfills.0f4f10fcf2eaa5a1fc4a.js",
         "/star-wars/runtime.c6dbd77ac69669464877.js",
-        "/star-wars/styles.df45c084bf313fe78fbd.css"
+        "/star-wars/styles.4d17e3824b2c1edb5322.css"
       ],
       "patterns": []
     },
@@ -51,7 +51,9 @@
     {
       "name": "api-freshness",
       "patterns": [
-        "https:\\/\\/swapi\\.dev\\/api\\/.*"
+        "https:\\/\\/swapi\\.dev\\/api\\/starships\\/\\?page=1",
+        "https:\\/\\/swapi\\.dev\\/api\\/starships\\/\\?page=2",
+        "https:\\/\\/swapi\\.dev\\/api\\/starships\\/\\?page=3"
       ],
       "strategy": "performance",
       "maxSize": 20,
@@ -79,12 +81,12 @@
     "/star-wars/assets/img/no-image.png": "611d5ab770dc729859c54a7117079bfdbdd75bc4",
     "/star-wars/common.36120c14665270a5f98a.js": "4f255233fc693744ee63731ac9be4312d992ad55",
     "/star-wars/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/star-wars/index.html": "242613e4b6662fd4ece160e8cfae59fb7497ae9a",
+    "/star-wars/index.html": "fb06f67e093ebff1e3bed768c991e51217a91446",
     "/star-wars/main.a51cfc969f32e17c2db8.js": "f740412e600fac3c8c0e4ef32bf3204558ac37e5",
     "/star-wars/manifest.webmanifest": "1d9b6fe497046b1dcb3a7cbb1b6de55a5a276693",
     "/star-wars/polyfills.0f4f10fcf2eaa5a1fc4a.js": "2f7cb0af035efa8b934eb1306a66b18e70d502bc",
     "/star-wars/runtime.c6dbd77ac69669464877.js": "1551eda2f1337317af044082292229cc3b8b5ae4",
-    "/star-wars/styles.df45c084bf313fe78fbd.css": "c9f860b39ff8ed8f0466514da5dd4eb22de19fe2"
+    "/star-wars/styles.4d17e3824b2c1edb5322.css": "4afa3a101fd6d571e2cbc836a1a22a284aa3bb00"
   },
   "navigationUrls": [
     {
