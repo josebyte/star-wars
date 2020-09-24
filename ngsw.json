@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1600940789939,
+  "timestamp": 1600943413278,
   "index": "/star-wars/index.html",
   "assetGroups": [
     {
@@ -11,16 +11,16 @@
         "ignoreVary": true
       },
       "urls": [
-        "/star-wars/2.cbcd14ed047973d38dfb.js",
+        "/star-wars/2.b0bdeece290540df3d17.js",
         "/star-wars/6.6dd39511221f0f24835a.js",
         "/star-wars/7.d9d46cb77c1cf07b7bae.js",
         "/star-wars/common.36120c14665270a5f98a.js",
         "/star-wars/favicon.ico",
         "/star-wars/index.html",
-        "/star-wars/main.a51cfc969f32e17c2db8.js",
+        "/star-wars/main.862b4edc86692bcb4a76.js",
         "/star-wars/manifest.webmanifest",
         "/star-wars/polyfills.0f4f10fcf2eaa5a1fc4a.js",
-        "/star-wars/runtime.c6dbd77ac69669464877.js",
+        "/star-wars/runtime.473df7d081c3a1a549a5.js",
         "/star-wars/styles.4d17e3824b2c1edb5322.css"
       ],
       "patterns": []
@@ -58,7 +58,6 @@
       "strategy": "performance",
       "maxSize": 20,
       "maxAge": 300000,
-      "timeoutMs": 5000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -66,7 +65,7 @@
     }
   ],
   "hashTable": {
-    "/star-wars/2.cbcd14ed047973d38dfb.js": "291eefbab200d7fc16216ac15ab28ae2fe078dbe",
+    "/star-wars/2.b0bdeece290540df3d17.js": "1fd0c8ec94759d45b2eee735f33a636a81ff2e63",
     "/star-wars/6.6dd39511221f0f24835a.js": "2f428139c2648914dc68342886ae452d21ff219a",
     "/star-wars/7.d9d46cb77c1cf07b7bae.js": "580b7008af1f18c2c853ee16014b651aeb2c208f",
     "/star-wars/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
@@ -81,11 +80,11 @@
     "/star-wars/assets/img/no-image.png": "611d5ab770dc729859c54a7117079bfdbdd75bc4",
     "/star-wars/common.36120c14665270a5f98a.js": "4f255233fc693744ee63731ac9be4312d992ad55",
     "/star-wars/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/star-wars/index.html": "fb06f67e093ebff1e3bed768c991e51217a91446",
-    "/star-wars/main.a51cfc969f32e17c2db8.js": "f740412e600fac3c8c0e4ef32bf3204558ac37e5",
+    "/star-wars/index.html": "a84345390f5e1d13309bf613907640ec9817f62a",
+    "/star-wars/main.862b4edc86692bcb4a76.js": "83767e6b79755d33bae8dc300f22ff9aa57f71f6",
     "/star-wars/manifest.webmanifest": "1d9b6fe497046b1dcb3a7cbb1b6de55a5a276693",
     "/star-wars/polyfills.0f4f10fcf2eaa5a1fc4a.js": "2f7cb0af035efa8b934eb1306a66b18e70d502bc",
-    "/star-wars/runtime.c6dbd77ac69669464877.js": "1551eda2f1337317af044082292229cc3b8b5ae4",
+    "/star-wars/runtime.473df7d081c3a1a549a5.js": "235fda3a78f70070d9bfbeae235ac4a3279c8aaf",
     "/star-wars/styles.4d17e3824b2c1edb5322.css": "4afa3a101fd6d571e2cbc836a1a22a284aa3bb00"
   },
   "navigationUrls": [
