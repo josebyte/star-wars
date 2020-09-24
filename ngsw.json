@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1598697305432,
-  "index": "/star-wars/index.html",
+  "timestamp": 1600938843779,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,15 +11,17 @@
         "ignoreVary": true
       },
       "urls": [
-        "/star-wars/1.ee00e7c9c83c8b2a4f4a.js",
-        "/star-wars/5.347a44993a1b73e8a4f5.js",
-        "/star-wars/favicon.ico",
-        "/star-wars/index.html",
-        "/star-wars/main.d83c08b526d7eb22cb84.js",
-        "/star-wars/manifest.webmanifest",
-        "/star-wars/polyfills.df8df8924122ea727a19.js",
-        "/star-wars/runtime.ed86fc642434f8f794a0.js",
-        "/star-wars/styles.df45c084bf313fe78fbd.css"
+        "/2.fe3aa6cf1de5bf46872a.js",
+        "/6.155ab4408d37ce64986e.js",
+        "/7.eccae4bf7ce2918220c3.js",
+        "/common.36120c14665270a5f98a.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.a51cfc969f32e17c2db8.js",
+        "/manifest.webmanifest",
+        "/polyfills.0f4f10fcf2eaa5a1fc4a.js",
+        "/runtime.f835e4b17ccdecfff96f.js",
+        "/styles.df45c084bf313fe78fbd.css"
       ],
       "patterns": []
     },
@@ -31,15 +33,16 @@
         "ignoreVary": true
       },
       "urls": [
-        "/star-wars/assets/icons/icon-128x128.png",
-        "/star-wars/assets/icons/icon-144x144.png",
-        "/star-wars/assets/icons/icon-152x152.png",
-        "/star-wars/assets/icons/icon-192x192.png",
-        "/star-wars/assets/icons/icon-384x384.png",
-        "/star-wars/assets/icons/icon-512x512.png",
-        "/star-wars/assets/icons/icon-72x72.png",
-        "/star-wars/assets/icons/icon-96x96.png",
-        "/star-wars/assets/img/no-image.jpg"
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/no-image-list.jpg",
+        "/assets/img/no-image.png"
       ],
       "patterns": []
     }
@@ -52,7 +55,7 @@
       ],
       "strategy": "performance",
       "maxSize": 20,
-      "maxAge": 172800000,
+      "maxAge": 300000,
       "timeoutMs": 5000,
       "cacheQueryOptions": {
         "ignoreVary": true
@@ -61,24 +64,27 @@
     }
   ],
   "hashTable": {
-    "/star-wars/1.ee00e7c9c83c8b2a4f4a.js": "7a741f7a2244dfa1b3320103e153e938b4fa1703",
-    "/star-wars/5.347a44993a1b73e8a4f5.js": "372de100d3ef72252a19aade31e530386b9e2f42",
-    "/star-wars/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/star-wars/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/star-wars/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/star-wars/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/star-wars/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/star-wars/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/star-wars/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/star-wars/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/star-wars/assets/img/no-image.jpg": "4f9b376208c8e5250e07cd67113979070fe26969",
-    "/star-wars/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/star-wars/index.html": "3f7a3553599692be4d5bbac3a6cad72849df5f81",
-    "/star-wars/main.d83c08b526d7eb22cb84.js": "859b08551fef017b8f6f2296c03cdaeea30dc8ac",
-    "/star-wars/manifest.webmanifest": "94856f326156c9cccce0548443a2290ef4c53f95",
-    "/star-wars/polyfills.df8df8924122ea727a19.js": "99facf9bee8da793cc8401108fb1e1fa7c6c4782",
-    "/star-wars/runtime.ed86fc642434f8f794a0.js": "044c7533b28e387d959e7a696dcdd6435cf9a8ea",
-    "/star-wars/styles.df45c084bf313fe78fbd.css": "c9f860b39ff8ed8f0466514da5dd4eb22de19fe2"
+    "/2.fe3aa6cf1de5bf46872a.js": "86a43c80f7db17e9f783deb539da15cffeecec6f",
+    "/6.155ab4408d37ce64986e.js": "7537a570cbfbe1c8b4f20c8673c3788c348187b2",
+    "/7.eccae4bf7ce2918220c3.js": "55bf9eeed7d7f723929209caf80468852c3467b8",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/img/no-image-list.jpg": "4f9b376208c8e5250e07cd67113979070fe26969",
+    "/assets/img/no-image.png": "611d5ab770dc729859c54a7117079bfdbdd75bc4",
+    "/common.36120c14665270a5f98a.js": "4f255233fc693744ee63731ac9be4312d992ad55",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "27ffa44808a22d1820eac9dc6fee098de7099903",
+    "/main.a51cfc969f32e17c2db8.js": "f740412e600fac3c8c0e4ef32bf3204558ac37e5",
+    "/manifest.webmanifest": "1d9b6fe497046b1dcb3a7cbb1b6de55a5a276693",
+    "/polyfills.0f4f10fcf2eaa5a1fc4a.js": "2f7cb0af035efa8b934eb1306a66b18e70d502bc",
+    "/runtime.f835e4b17ccdecfff96f.js": "0849d6ba66061efd487c72d3d257247900669397",
+    "/styles.df45c084bf313fe78fbd.css": "c9f860b39ff8ed8f0466514da5dd4eb22de19fe2"
   },
   "navigationUrls": [
     {
