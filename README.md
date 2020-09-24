@@ -25,8 +25,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       cd dist
       http-server -o -c-1
 - 7: ✓ Implementar un menú para los usuarios registrados:
-- Tests unitarios: Selecciona algun componente o servicio y aplicale testing. La idea es que nos demuestres tus conocimientos de testing mas allá de los que ofrece angular al ejecutar un comando de ng-cli.
-
+- Tests unitarios
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
