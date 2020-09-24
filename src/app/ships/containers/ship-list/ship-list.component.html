@@ -3,15 +3,15 @@
 
   <div class="ships">
     <div class="row">
-      <app-ship *ngFor="let ship of starships.results" [starship]="ship" class="col-xs-6 col-sm-6 col-md-3"></app-ship>
+      <app-ship *ngFor="let ship of starships.results" [starship]="ship" class="col-sm-6 col-md-3"></app-ship>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-6">
       <button *ngIf="starships.previous" (click)="goToPage(starships.previous)" class="btn btn-primary">Prev</button>
     </div>
-    <div class="col-xs-6 right">
+    <div class="col-6 right">
       <button *ngIf="starships.next" (click)="goToPage(starships.next)" class="btn btn-primary">Next</button>
     </div>
   </div>
