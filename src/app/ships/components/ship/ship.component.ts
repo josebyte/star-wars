@@ -19,7 +19,7 @@ export class ShipComponent implements OnInit {
   }
 
   onImgError(error): void{
-    error.target.src = '../../../../assets/img/no-image.jpg';
+    error.target.src = 'assets/img/no-image-list.jpg';
   }
 
 }

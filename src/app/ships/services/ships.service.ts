@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { take, shareReplay} from 'rxjs/operators';
-import { environment} from '../../../environments/environment';
-import { CachedHttpClient} from './CachedHttpClient';
+import { environment } from '../../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { first } from 'rxjs/operators';
 
 @Injectable()
 export class ShipsService {
 
   constructor(
-    private httpCached: CachedHttpClient,
+    private http: HttpClient
   ) { }
 
   loadShips(payload?: { page: number }): Observable<any> { // todo: create ship model
-    return this.httpCached.get(environment.api.ships + '?page=' + payload.page, 300000);
+    return this.http.get(environment.api.ships + '?page=' + payload.page).pipe(first());
   }
 
   loadShipDetails(id: number): Observable<any> { // todo: create ship model
-    return this.httpCached.get(environment.api.ships + id, 300000);
+    return this.http.get(environment.api.ships + id);
   }
 }

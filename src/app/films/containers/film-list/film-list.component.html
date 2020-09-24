@@ -1,0 +1,19 @@
+<ng-container *ngIf="(films$ | async) as films">
+  <h1>Films</h1>
+
+  <div class="ships">
+    <div class="row">
+      <app-film *ngFor="let film of films.results" [film]="film" class="col-sm-6 col-md-4"></app-film>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <button *ngIf="films.previous" (click)="goToPage(films.previous)" class="btn btn-primary">Prev</button>
+    </div>
+    <div class="col-6 right">
+      <button *ngIf="films.next" (click)="goToPage(films.next)" class="btn btn-primary">Next</button>
+    </div>
+  </div>
+
+</ng-container>

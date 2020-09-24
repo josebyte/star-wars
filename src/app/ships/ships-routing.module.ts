@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ShipListComponent } from './components/ship-list/ship-list.component';
-import { ShipDetailsComponent} from './components/ship-details/ship-details.component';
+import { ShipListComponent } from './containers/ship-list/ship-list.component';
+import { ShipDetailsComponent} from './containers/ship-details/ship-details.component';
 import { AuthGuard} from '../auth/auth.guard';
 
 const routes: Routes = [
-  { path: '',
+  { path: ':pag',
     component: ShipListComponent,
     canActivate: [AuthGuard]
   },
   { path: 'ship-details/:id',
     component: ShipDetailsComponent,
+    canActivate: [AuthGuard]
+  },
+  { path: '',
+    component: ShipListComponent,
     canActivate: [AuthGuard]
   },
 ];

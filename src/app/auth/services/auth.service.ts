@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable ,  throwError as _throw ,  of } from 'rxjs';
-import { switchMap,  catchError, tap } from 'rxjs/operators';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
@@ -45,8 +43,13 @@ export class AuthService {
     return false;
   }
 
+  isLogged(): boolean {
+    return !!localStorage.getItem('currentUser');
+  }
+
   logout(): void {
     localStorage.removeItem('currentUser');
+    this.router.navigate(['/auth']);
   }
 
 }

@@ -1,0 +1,8 @@
+<div class="ship">
+  <div class="panel-body">
+    <img
+      [src]="'https://starwars-visualguide.com/assets/img/films/'+getFilmId()+'.jpg'"
+      (error)="onImgError($event)">
+    <h5 class="text-center">{{ film.title }}</h5>
+  </div>
+</div>

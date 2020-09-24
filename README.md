@@ -3,7 +3,29 @@
 Project demo is visible here:
 https://josebyte.github.io/star-wars/
 
+When edit deploy again using: ng deploy --base-href=/star-wars/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+
+## Tareas:
+
+- 1: ✓ Migrar el prototipo actual a un proyecto nuevo con angular.
+- 2: ✓ Listado naves: 
+  -  ✓ Implementar correctamente la paginación del listado de naves.
+  -  ✓ Hay imágenes que no existen, en ese caso se debe mostrar un texto o imagen informando que no está disponible.
+- 3: ✓ Creación de una ficha de detalle de la nave:
+  -  ✓ Se quiere crear una ficha que se abra al hacer click sobre una de las naves que aparecen.
+  -  ✓ Se debe implementar un botón de volver al listado
+- 4: ✓ Modernización del site.
+- 5: ✓ Cuando entras por primera vez te debe redirigir a la página de naves.
+- 6: ✓ Cache: Implementar una caché del lado de cliente para proteger la api:
+      Cache de assets y api(5min) implementado mediante PWA, github pages no lo soporta, probar mediante:
+      npm run build --prod
+      npm install -g http-server
+      cd dist
+      http-server -o -c-1
+- 7: ✓ Implementar un menú para los usuarios registrados:
+- Tests unitarios: Selecciona algun componente o servicio y aplicale testing. La idea es que nos demuestres tus conocimientos de testing mas allá de los que ofrece angular al ejecutar un comando de ng-cli.
 
 ## Development server
 

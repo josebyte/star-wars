@@ -29,15 +29,14 @@
   ],
   "dataGroups": [
     {
-      "name": "api-freshness",
+      "name": "api-performance",
       "urls": [
         "https://swapi.dev/api/**"
       ],
       "cacheConfig": {
         "strategy": "performance",
-        "timeout": "5s",
-        "maxAge": "2d",
-        "maxSize": 20
+        "maxAge": "5m",
+        "maxSize": 50
       }
     }
   ]
